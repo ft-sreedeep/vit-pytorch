@@ -43,17 +43,6 @@ Refer to the following images for model architecture and embeddings:
 
 <img src="docs/pos_embedding.svg" alt="Positional Embedding" width="600"/>
 
-### Files
-
-`src/utils.py`: Provides functionality for saving models.
-
-`vit.py`: Contains the Vision Transformer model definition.
-
-`src/data_setup.py`: Handles data loading and preprocessing.
-
-`src/engine.py`: Contains functions for training and evaluating the model.
-
-`src/helper_function.py`: Includes utility functions such as plotting loss curves.
 
 ### Citations 
 
