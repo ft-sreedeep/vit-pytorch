@@ -4,6 +4,12 @@
 
 This project implements a Vision Transformer (ViT) model from scratch for image classification tasks. The model architecture is based on the Vision Transformer paper and is designed to handle various image classification tasks using PyTorch.
 
+Inspired by the Transformer scaling successes in NLP, we experiment with applying a standard
+Transformer directly to images, with the fewest possible modifications. To do so, we split an image
+into patches and provide the sequence of linear embeddings of these patches as an input to a Trans-
+former. Image patches are treated the same way as tokens (words) in an NLP application. We train
+the model on image classification in supervised fashion
+
 ### Files
 
 `src/utils.py`: Provides functionality for saving models.
