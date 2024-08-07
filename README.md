@@ -10,17 +10,6 @@ into patches and provide the sequence of linear embeddings of these patches as a
 former. Image patches are treated the same way as tokens (words) in an NLP application. We train
 the model on image classification in supervised fashion
 
-### Files
-
-`src/utils.py`: Provides functionality for saving models.
-
-`vit.py`: Contains the Vision Transformer model definition.
-
-`src/data_setup.py`: Handles data loading and preprocessing.
-
-`src/engine.py`: Contains functions for training and evaluating the model.
-
-`src/helper_function.py`: Includes utility functions such as plotting loss curves.
 
 ### Core Structure
 
@@ -53,6 +42,19 @@ Refer to the following images for model architecture and embeddings:
 <img src="docs/class_tokens.svg" alt="Class Tokens" width="600"/>
 
 <img src="docs/pos_embedding.svg" alt="Positional Embedding" width="600"/>
+
+### Files
+
+`src/utils.py`: Provides functionality for saving models.
+
+`vit.py`: Contains the Vision Transformer model definition.
+
+`src/data_setup.py`: Handles data loading and preprocessing.
+
+`src/engine.py`: Contains functions for training and evaluating the model.
+
+`src/helper_function.py`: Includes utility functions such as plotting loss curves.
+
 
 ### Citations 
 
