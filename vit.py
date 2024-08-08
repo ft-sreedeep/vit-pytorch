@@ -40,13 +40,13 @@ class PatchEmbedding(nn.Module):
         x_patched = self.patcher(x)
         x_flattened = self.flatten(x_patched) 
         # 6. Make sure the output shape has the right order 
-        return x_flattened.permute(0, 2, 1)
+        return x_flattened.permute(0, 2, 1) #permuting to change the order of dimension
 
 
 
 
 
-
+#main function
 class ViT(nn.Module):
     def __init__(self,
                 img_size = 224,
@@ -108,7 +108,7 @@ class ViT(nn.Module):
         
         
         # Create class token embedding and expand it to match the batch size (equation 1)
-        class_token = self.class_token.expand(batch_size, -1, -1) # "-1" means to infer the dimension (try this line on its own)
+        class_token = self.class_token.expand(batch_size, -1, -1) # "-1" means to infer the dimension 
 
         # Concat class embedding and patch embedding (equation 1)
         x = torch.cat((class_token, x), dim=1)
