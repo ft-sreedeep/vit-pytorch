@@ -35,7 +35,7 @@ The ViT architecture is comprised of several stages:
 
 ### Citations
 
-This project attempts to replicate the official Vision Transformer model (ViT) as described in the paper:                              
+This project attempts to replicate the official Vision Transformer model (ViT) as described in the paper named:                              
 **[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/pdf/2010.11929)**
 
 
